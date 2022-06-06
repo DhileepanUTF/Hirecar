@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <!--<link rel="stylesheet" href="style.css" type="text/css"/>-->
+
+        <title>Playmaker</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div.checker {
+    width: 200px;
+    height: 20px;
+    /*border: 1px solid blue;*/
+    text-align: center;
+    position: relative;
+    
+}
+#holder{
+    position: relative;
+    border: 1px solid red;
+    border-style: inset;
+}
+#one {
+  top: 50px;
+  position: relative;
+  background-color: #999999;
+  width: 100%;
+  height: 30px;
+}
+</style>
+        
+    </head>
+    <body style="background-color:#ffffff;align-content: center;text-align: center">
+        
+        <div id="one">  
+            <!--<h2 style="color:black;text-align: center">Hey You are gonna see this webpage change without refreshing</h2><br>-->
+        
+        </div>
+        <br><br>
+        <br>
+        <p>Password checker:<br> In order to have a strong password, you must have at least 8 characters, at least 1 caps and at least 1 number. You may or may not have special characters   </p>
+        
+        
+        <div id="main" >
+            <br><br><br><br>
+            <input type="password" placeholder="Enter a password" id="pwd" >
+            <input type="checkbox" id="Show" value="show"><label for="show">show</label>
+            <br>
+            <!--<input type="submit" style="display:none;align-self: center" value="GOOO" id="btn">-->
+            <button id="btn" style="display:none;align-self: center" >GOO</button>
+            <br><br><br>
+            <div id="holder" style="border: 1px;border-style: inset">          
+                <!-- comment<br><br><br><br> -->
+                <br><br>
+                <div id="Total" class="checker" style="float: left" >Required characters</div>
+                <div id="Capital" class="checker" style="display: inline-flex; text-align: center">Capital Letter</div>
+                <div id="Number" class="checker" style="float: right">Minimum one number</div>
+                
+                <p id="Special" style="display: none;color: green">Special Character</p>
+            </div>
+        </div>
+        <script src="password.js"></script>
+    </body>
+</html>

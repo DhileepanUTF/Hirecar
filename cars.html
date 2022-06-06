@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Dhileep Ajax</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table {
+            margin: 0 auto;
+            font-size: large;
+            border: 1px solid black;
+        }
+  
+        h1 {
+            text-align: center;
+            color: #006600;
+            font-size: xx-large;
+            font-family: 'Gill Sans', 
+                'Gill Sans MT', ' Calibri', 
+                'Trebuchet MS', 'sans-serif';
+        }
+  
+        td {
+            background-color: #E4F5D4;
+            border: 1px solid black;
+        }
+  
+        th,
+        td {
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+  
+        td {
+            font-weight: lighter;
+        }
+        #last{
+            display: none;
+        }
+        #selector{
+            display:block;
+        }
+
+      </style>
+    </head>
+    <body id="carss" style="background-color:beige; display:block" >
+        <div id ="last" style="background-color: #64ffd0; width: 150px; height: 100px ; display: none">
+            <input type="text" id="option" placeholder="Enter id of car">
+            <br>
+            <br>
+            <!-- <h1>HIIIIIIIIIIIII</h1> -->
+            <button id="selector" >Rent</button>
+
+        </div>  
+        <div style="top:20px; font-size: 150%; color:black"><h1>Select the car for your Rental<h2></div>
+        <br><br>
+        <button id="btn" style="width:50px">Click me</button>
+        <script src="car.js"></script>
+        <div id="carinfo">
+            <table id='table'>
+                <!-- HEADING FORMATION -->
+                <tr id="tableheader">
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>Horsepower</th>
+                    <th>Acceleration</th>
+                    <th>Displacement</th>
+                    <th>Rentalperday</th>
+                </tr>
+                </table>
+        </div>
+        
+        
+    </body>
+</html>
